@@ -11,13 +11,13 @@ urls:
     - text: Home
       url: /
     - text: Sobre mí
-      url: /sobre_mi/
+      url: /sobre-mi/
     - text: Blog
       url: /blog/
     - text: Galeria
       url: /galeria/
     - text: Servicios
-      url : /tienda/
+      url : /servicios/
     - text: Contacto
       url : /contacto/
 
