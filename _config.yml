@@ -14,8 +14,6 @@ urls:
       url: /sobre-mi/
     - text: Blog
       url: /blog/
-    - text: Galeria
-      url: /galeria/
     - text: Servicios
       url : /servicios/
     - text: Contacto
