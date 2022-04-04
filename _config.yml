@@ -11,15 +11,15 @@ urls:
     - text: Home
       url: /
     - text: Sobre mí
-      url: /sobre_mi
+      url: /sobre_mi/
     - text: Blog
-      url: /blog
+      url: /blog/
     - text: Galeria
-      url: /galeria
+      url: /galeria/
     - text: Servicios
-      url : /tienda
+      url : /tienda/
     - text: Contacto
-      url : /contacto
+      url : /contacto/
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
