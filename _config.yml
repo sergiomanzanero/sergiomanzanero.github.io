@@ -1,7 +1,7 @@
 title: Sergio Manzanero
-subtitle: A Portfolio Jekyll Theme Built for Developers
+subtitle: devlopr 
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  devlopr-jekyll .
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "https://sergiomanzanero.github.io/" # the subpath of your site, e.g. /blog
@@ -96,8 +96,8 @@ author_project_details:
 formspree_email: manzanero.sergio@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
-olvy_organization: devlopr
-olvy_widget_type: sidebar
+#olvy_organization: devlopr
+#olvy_widget_type: sidebar
 
 # syntax highlighter
 markdown: kramdown
@@ -105,9 +105,9 @@ highlighter: rouge
 permalink: pretty
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+show_author_work_experiences: false
+show_author_education_details: false
+show_author_project_details: false
 
 # pagination of posts
 paginate: 4
