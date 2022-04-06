@@ -1,7 +1,7 @@
 title: Sergio Manzanero
 subtitle: devlopr 
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll .
+  devlopr-arsys .
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "https://sergiomanzanero.github.io/" # the subpath of your site, e.g. /blog
@@ -11,13 +11,13 @@ urls:
     - text: Home
       url: /
     - text: Sobre mí
-      url: /sobre-mi/
+      url: sobre-mi/
     - text: Blog
-      url: /blog/
+      url: blog/
     - text: Servicios
-      url : /servicios/
+      url : servicios/
     - text: Contacto
-      url : /contacto/
+      url : contacto/
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
@@ -123,18 +123,18 @@ paginate_path: "/blog/page/:num/"
 #     envs: ['development']
 
 # Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
+  jekyll-archives:
+    enabled:
+      - categories
+    layout: archive
+    permalinks:
+      category: '/category/:name/'
 
 collections:
   products:
-    output: true
+    output: false
   authors:
-    output: true
+    output: false
 
 defaults:
   -
@@ -166,7 +166,7 @@ jekyll_admin:
   #   - staticfiles
   #   - datafiles
   #   - configuration
-  homepage: "posts"
+  homepage: "pages"
 
 
 # Exclude from processing.
