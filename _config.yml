@@ -19,7 +19,7 @@ urls:
     - text: Blog
       url: /blog/
     - text: Servicios
-      url : /servicios/
+      url : /blog/
     - text: Contacto
       url : /contacto/
 
