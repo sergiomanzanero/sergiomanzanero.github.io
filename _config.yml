@@ -14,7 +14,7 @@ urls:
     - text: Blog
       url: /blog
     - text: Servicios
-      url: /shop
+      url: /servicios
     - text: Contacto
       url : /contacto
 
@@ -25,7 +25,7 @@ author_logo: profile.png
 author: Sergio Manzanero
 author_bio: Soy de todo lo que se puede ser... :D
 author_email: "manzanero.Sergio@gmail.com"
-author_location: India
+author_location: España
 author_website_url: "https://singletontechs.com"
 typewrite-text: devloper y soñador
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
@@ -82,10 +82,10 @@ github_username:  sergiomanzanero
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
 # disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
+#hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+#wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
 #mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
@@ -138,7 +138,7 @@ collections:
 defaults:
   -
     scope:
-      path: "servicios"
+      path: "blog"
     values:
       permalink: /:path/:basename:output_ext
   -
@@ -165,7 +165,7 @@ jekyll_admin:
   #   - staticfiles
   #   - datafiles
   #   - configuration
-  homepage: "pagea"
+  homepage: "pages"
 
 
 # Exclude from processing.
