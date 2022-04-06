@@ -1,35 +1,33 @@
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: Sergio Manzanero
+subtitle: Un CMS en Python para Developers
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  devlopr y lo que salta
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
-    - text: Home
+    - text: Inicio
       url: /
-    - text: About
-      url: /about
+    - text: Sobre mí
+      url: /sobre-mi
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
-    - text: Contact
-      url : /contact
+    - text: Servicios
+      url: /servicios
+    - text: Contacto
+      url : /contacto
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
+author: Sergio Manzanero
+author_bio: Soy de todo lo que se puede ser... :D
+author_email: "manzanero.Sergio@gmail.com"
 author_location: India
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author_website_url: "https://singletontechs.com"
+typewrite-text: devloper y soñador
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
@@ -70,16 +68,16 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+#twitter_username: johndoe
+github_username:  sergiomanzanero
+#facebook_username: johndoe
+#linkedin_username: johndoe
+#behance_username: johndoe
+#instagram_username: johndoe
+#medium_username: johndoe
+#telegram_username: johndoe
+#dribbble_username: johndoe
+#vflickr_username: johndoe
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
@@ -90,15 +88,15 @@ hyvor_talk_website_id: 476
 wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+#mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
+formspree_email: manzanero.sergio@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
-olvy_organization: devlopr
-olvy_widget_type: sidebar
+#olvy_organization: devlopr
+#olvy_widget_type: sidebar
 
 # syntax highlighter
 markdown: kramdown
@@ -106,9 +104,9 @@ highlighter: rouge
 permalink: pretty
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+#show_author_work_experiences: true
+#show_author_education_details: true
+#show_author_project_details: true
 
 # pagination of posts
 paginate: 4
@@ -140,7 +138,7 @@ collections:
 defaults:
   -
     scope:
-      path: "gallery"
+      path: "servicios"
     values:
       permalink: /:path/:basename:output_ext
   -
@@ -167,7 +165,7 @@ jekyll_admin:
   #   - staticfiles
   #   - datafiles
   #   - configuration
-  homepage: "posts"
+  homepage: "pagea"
 
 
 # Exclude from processing.
