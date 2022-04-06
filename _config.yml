@@ -1,11 +1,7 @@
 title: Sergio Manzanero
 subtitle: devlopr 
 description: >- # this means to ignore newlines until "baseurl:"
-<<<<<<< HEAD
   devlopr y lo que salga is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
-=======
-  devlopr-arsys .
->>>>>>> a8b41ceb64d90e635cdd0da3c831e84ad8b52800
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "https://sergiomanzanero.github.io" # the subpath of your site, e.g. /blog
@@ -111,11 +107,6 @@ permalink: pretty
 # Choose what to show ( can be true or false)
 show_author_work_experiences: false
 show_author_education_details: false
-<<<<<<< HEAD
-show_author_project_details: true
-=======
-show_author_project_details: false
->>>>>>> a8b41ceb64d90e635cdd0da3c831e84ad8b52800
 
 # pagination of posts
 paginate: 4
