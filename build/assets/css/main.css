@@ -165,7 +165,7 @@ header { background-color: var(--main-background-color); box-shadow: 0px; height
 .fb_iframe_widget span { vertical-align: inherit !important; }
 
 /* floating btn for buy me coffee */
-#bmc-wbtn { bottom: 40px !important; }
+#bmc-wbtn { display: none !important; bottom: 40px !important; }
 
 /* Disqus */
 #reactions .reaction-items .reaction-item .reaction-item__text, #reactions-promotion .reaction-items .reaction-item .reaction-item__text { margin-left: 8px; color: var(--main-text-color) !important; }
