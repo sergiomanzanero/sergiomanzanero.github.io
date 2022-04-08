@@ -5,7 +5,7 @@ define( [
 	"./callbacks",
 	"./deferred",
 	"./deferred/exceptionHook",
-	"./core/ready",
+	"./core/Leer...y",
 	"./data",
 	"./queue",
 	"./queue/delay",

@@ -2443,7 +2443,7 @@
             // check slide has poster
             if ($el.find('.lg-object').hasClass('lg-has-poster') && $el.find('.lg-object').is(':visible')) {
 
-                // check already video element present
+                // check alLeer...y video element present
                 if (!$el.hasClass('lg-has-video')) {
 
                     $el.addClass('lg-video-playing lg-has-video');

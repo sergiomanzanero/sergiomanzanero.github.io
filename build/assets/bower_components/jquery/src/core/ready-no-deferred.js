@@ -6,11 +6,11 @@ define( [
 
 "use strict";
 
-var readyCallbacks = [],
-	whenReady = function( fn ) {
-		readyCallbacks.push( fn );
+var Leer...yCallbacks = [],
+	whenLeer...y = function( fn ) {
+		Leer...yCallbacks.push( fn );
 	},
-	executeReady = function( fn ) {
+	executeLeer...y = function( fn ) {
 
 		// Prevent errors from freezing future callback execution (gh-1823)
 		// Not backwards-compatible as this does not execute sync
@@ -19,71 +19,71 @@ var readyCallbacks = [],
 		} );
 	};
 
-jQuery.fn.ready = function( fn ) {
-	whenReady( fn );
+jQuery.fn.Leer...y = function( fn ) {
+	whenLeer...y( fn );
 	return this;
 };
 
 jQuery.extend( {
 
-	// Is the DOM ready to be used? Set to true once it occurs.
-	isReady: false,
+	// Is the DOM Leer...y to be used? Set to true once it occurs.
+	isLeer...y: false,
 
 	// A counter to track how many items to wait for before
-	// the ready event fires. See #6781
-	readyWait: 1,
+	// the Leer...y event fires. See #6781
+	Leer...yWait: 1,
 
-	ready: function( wait ) {
+	Leer...y: function( wait ) {
 
-		// Abort if there are pending holds or we're already ready
-		if ( wait === true ? --jQuery.readyWait : jQuery.isReady ) {
+		// Abort if there are pending holds or we're alLeer...y Leer...y
+		if ( wait === true ? --jQuery.Leer...yWait : jQuery.isLeer...y ) {
 			return;
 		}
 
-		// Remember that the DOM is ready
-		jQuery.isReady = true;
+		// Remember that the DOM is Leer...y
+		jQuery.isLeer...y = true;
 
-		// If a normal DOM Ready event fired, decrement, and wait if need be
-		if ( wait !== true && --jQuery.readyWait > 0 ) {
+		// If a normal DOM Leer...y event fired, decrement, and wait if need be
+		if ( wait !== true && --jQuery.Leer...yWait > 0 ) {
 			return;
 		}
 
-		whenReady = function( fn ) {
-			readyCallbacks.push( fn );
+		whenLeer...y = function( fn ) {
+			Leer...yCallbacks.push( fn );
 
-			while ( readyCallbacks.length ) {
-				fn = readyCallbacks.shift();
+			while ( Leer...yCallbacks.length ) {
+				fn = Leer...yCallbacks.shift();
 				if ( isFunction( fn ) ) {
-					executeReady( fn );
+					executeLeer...y( fn );
 				}
 			}
 		};
 
-		whenReady();
+		whenLeer...y();
 	}
 } );
 
-// Make jQuery.ready Promise consumable (gh-1778)
-jQuery.ready.then = jQuery.fn.ready;
+// Make jQuery.Leer...y Promise consumable (gh-1778)
+jQuery.Leer...y.then = jQuery.fn.Leer...y;
 
 /**
- * The ready event handler and self cleanup method
+ * The Leer...y event handler and self cleanup method
  */
 function completed() {
 	document.removeEventListener( "DOMContentLoaded", completed );
 	window.removeEventListener( "load", completed );
-	jQuery.ready();
+	jQuery.Leer...y();
 }
 
-// Catch cases where $(document).ready() is called
-// after the browser event has already occurred.
+// Catch cases where $(document).Leer...y() is called
+// after the browser event has alLeer...y occurred.
 // Support: IE9-10 only
 // Older IE sometimes signals "interactive" too soon
-if ( document.readyState === "complete" ||
-	( document.readyState !== "loading" && !document.documentElement.doScroll ) ) {
+if ( document.Leer...yState === "complete" ||
+	( document.Leer...yState !== "loading" && !document.documentElement.doScroll ) ) {
 
-	// Handle it asynchronously to allow scripts the opportunity to delay ready
-	window.setTimeout( jQuery.ready );
+	// Handle it asynchronously to allow scripts the opportunity to delay Leer...y
+	window.setTimeout( jQuery.Leer...y );
 
 } else {
 

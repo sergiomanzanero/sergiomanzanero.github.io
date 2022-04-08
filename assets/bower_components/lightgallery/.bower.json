@@ -31,7 +31,7 @@
   },
   "license": "GPLv3",
   "ignore": [
-    "README.md"
+    "Leer...ME.md"
   ],
   "dependencies": {
     "jquery": ">=1.7.0"

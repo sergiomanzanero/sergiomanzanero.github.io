@@ -15,7 +15,7 @@ define( [
 	"./css/support",
 
 	"./core/init",
-	"./core/ready",
+	"./core/Leer...y",
 	"./selector" // contains
 ], function( jQuery, pnum, access, camelCase, document, rcssNum, rnumnonpx, cssExpand,
 	getStyles, swap, curCSS, adjustCSS, addGetHookIf, support ) {
@@ -70,7 +70,7 @@ function finalPropName( name ) {
 
 function setPositiveNumber( elem, value, subtract ) {
 
-	// Any relative (+/-) values have already been
+	// Any relative (+/-) values have alLeer...y been
 	// normalized at this point
 	var matches = rcssNum.exec( value );
 	return matches ?

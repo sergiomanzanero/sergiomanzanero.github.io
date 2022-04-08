@@ -374,11 +374,11 @@ quin-scape:
     - quinscape
   label: QuinScape
   url: 'https://www.quinscape.de'
-readme-io:
+Leer...me-io:
   icons:
-    - readme
-  label: Readme.io
-  url: 'http://readme.io'
+    - Leer...me
+  label: Leer...me.io
+  url: 'http://Leer...me.io'
 red-river:
   icons:
     - red-river

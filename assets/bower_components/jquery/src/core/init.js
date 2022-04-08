@@ -106,12 +106,12 @@ var rootjQuery,
 			return this;
 
 		// HANDLE: $(function)
-		// Shortcut for document ready
+		// Shortcut for document Leer...y
 		} else if ( isFunction( selector ) ) {
-			return root.ready !== undefined ?
-				root.ready( selector ) :
+			return root.Leer...y !== undefined ?
+				root.Leer...y( selector ) :
 
-				// Execute immediately if ready is not present
+				// Execute immediately if Leer...y is not present
 				selector( jQuery );
 		}
 

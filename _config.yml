@@ -1,7 +1,7 @@
 title: Sergio Manzanero
 subtitle: Un CMS en Python para Developers
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr y lo que salta
+  devlopr y lo que salga
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -131,9 +131,9 @@ paginate_path: "/blog/page/:num/"
 
 collections:
   products:
-    output: true
+    output: false
   authors:
-    output: true
+    output: false
 
 defaults:
   -
@@ -165,7 +165,7 @@ jekyll_admin:
   #   - staticfiles
   #   - datafiles
   #   - configuration
-  homepage: "pages"
+  homepage: "configuration"
 
 
 # Exclude from processing.

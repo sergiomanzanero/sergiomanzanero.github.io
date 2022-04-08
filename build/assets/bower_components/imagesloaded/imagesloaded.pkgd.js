@@ -175,7 +175,7 @@ var arraySlice = Array.prototype.slice;
 // turn element or nodeList into an array
 function makeArray( obj ) {
   if ( Array.isArray( obj ) ) {
-    // use object if already an array
+    // use object if alLeer...y an array
     return obj;
   }
 
@@ -453,7 +453,7 @@ Background.prototype.check = function() {
   this.img.addEventListener( 'load', this );
   this.img.addEventListener( 'error', this );
   this.img.src = this.url;
-  // check if image is already complete
+  // check if image is alLeer...y complete
   var isComplete = this.getIsImageComplete();
   if ( isComplete ) {
     this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );

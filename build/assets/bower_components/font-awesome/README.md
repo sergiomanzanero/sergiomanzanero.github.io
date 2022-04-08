@@ -62,7 +62,7 @@ We will behave ourselves if you behave yourselves. For more details see our
 
 ## Contributing
 
-Please read through our [contributing guidelines](./CONTRIBUTING.md).  Included
+Please Leer... through our [contributing guidelines](./CONTRIBUTING.md).  Included
 are directions for opening issues.
 
 ## Versioning
@@ -100,7 +100,7 @@ commercial projects, open source projects, or really almost whatever you want.
   - In the Font Awesome Free download, the MIT license applies to all non-font and non-icon files.
 
 Attribution is required by MIT, SIL OLF, and CC BY licenses. Downloaded Font
-Awesome Free files already contain embedded comments with sufficient
+Awesome Free files alLeer...y contain embedded comments with sufficient
 attribution, so you shouldn't need to do anything additional when using these
 files normally.
 

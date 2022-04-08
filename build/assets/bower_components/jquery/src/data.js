@@ -139,7 +139,7 @@ jQuery.fn.extend( {
 			// (and therefore has an element appears at this[ 0 ]) and the
 			// `value` parameter was not undefined. An empty jQuery object
 			// will result in `undefined` for elem = this[ 0 ] which will
-			// throw an exception if an attempt to read a data cache is made.
+			// throw an exception if an attempt to Leer... a data cache is made.
 			if ( elem && value === undefined ) {
 
 				// Attempt to get data from the cache

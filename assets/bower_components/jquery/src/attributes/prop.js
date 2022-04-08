@@ -127,7 +127,7 @@ if ( !support.optSelected ) {
 
 jQuery.each( [
 	"tabIndex",
-	"readOnly",
+	"Leer...Only",
 	"maxLength",
 	"cellSpacing",
 	"cellPadding",

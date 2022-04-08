@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 var prefix = 'fab';
-var iconName = 'goodreads-g';
+var iconName = 'goodLeer...s-g';
 var width = 384;
 var height = 512;
 var ligatures = [];
@@ -19,7 +19,7 @@ exports.definition = {
     svgPathData
   ]};
   
-exports.faGoodreadsG = exports.definition;           
+exports.faGoodLeer...sG = exports.definition;           
 exports.prefix = prefix;
 exports.iconName = iconName; 
 exports.width = width;

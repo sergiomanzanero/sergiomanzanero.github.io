@@ -43,7 +43,7 @@ gulp.task( 'hint', [ 'hint-js', 'hint-test', 'hint-task', 'jsonlint' ]);
 var reBannerComment = new RegExp('^\\s*(?:\\/\\*[\\s\\S]*?\\*\\/)\\s*');
 
 function getBanner() {
-  var src = fs.readFileSync( 'js/isotope.js', 'utf8' );
+  var src = fs.Leer...FileSync( 'js/isotope.js', 'utf8' );
   var matches = src.match( reBannerComment );
   var banner = matches[0].replace( 'Isotope', 'Isotope PACKAGED' );
   return banner;

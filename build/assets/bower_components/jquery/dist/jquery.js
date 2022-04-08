@@ -298,8 +298,8 @@ jQuery.extend( {
 	// Unique for each copy of jQuery on the page
 	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
 
-	// Assume jQuery is ready without the ready module
-	isReady: true,
+	// Assume jQuery is Leer...y without the Leer...y module
+	isLeer...y: true,
 
 	error: function( msg ) {
 		throw new Error( msg );
@@ -566,7 +566,7 @@ var i,
 		return -1;
 	},
 
-	booleans = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",
+	booleans = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|Leer...only|required|scoped",
 
 	// Regular expressions
 
@@ -1070,7 +1070,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	var hasCompare, subWindow,
 		doc = node ? node.ownerDocument || node : preferredDoc;
 
-	// Return early if doc is invalid or already selected
+	// Return early if doc is invalid or alLeer...y selected
 	if ( doc === document || doc.nodeType !== 9 || !doc.documentElement ) {
 		return document;
 	}
@@ -2995,12 +2995,12 @@ var rootjQuery,
 			return this;
 
 		// HANDLE: $(function)
-		// Shortcut for document ready
+		// Shortcut for document Leer...y
 		} else if ( isFunction( selector ) ) {
-			return root.ready !== undefined ?
-				root.ready( selector ) :
+			return root.Leer...y !== undefined ?
+				root.Leer...y( selector ) :
 
-				// Execute immediately if ready is not present
+				// Execute immediately if Leer...y is not present
 				selector( jQuery );
 		}
 
@@ -3236,7 +3236,7 @@ jQuery.Callbacks = function( options ) {
 		// Last fire value for non-forgettable lists
 		memory,
 
-		// Flag to know if list was already fired
+		// Flag to know if list was alLeer...y fired
 		fired,
 
 		// Flag to prevent firing
@@ -3407,7 +3407,7 @@ jQuery.Callbacks = function( options ) {
 				return this;
 			},
 
-			// To know if the callbacks have already been called at least once
+			// To know if the callbacks have alLeer...y been called at least once
 			fired: function() {
 				return !!fired;
 			}
@@ -3822,7 +3822,7 @@ jQuery.Deferred.exceptionHook = function( error, stack ) {
 
 
 
-jQuery.readyException = function( error ) {
+jQuery.Leer...yException = function( error ) {
 	window.setTimeout( function() {
 		throw error;
 	} );
@@ -3831,19 +3831,19 @@ jQuery.readyException = function( error ) {
 
 
 
-// The deferred used on DOM ready
-var readyList = jQuery.Deferred();
+// The deferred used on DOM Leer...y
+var Leer...yList = jQuery.Deferred();
 
-jQuery.fn.ready = function( fn ) {
+jQuery.fn.Leer...y = function( fn ) {
 
-	readyList
+	Leer...yList
 		.then( fn )
 
-		// Wrap jQuery.readyException in a function so that the lookup
+		// Wrap jQuery.Leer...yException in a function so that the lookup
 		// happens at the time of error handling instead of callback
 		// registration.
 		.catch( function( error ) {
-			jQuery.readyException( error );
+			jQuery.Leer...yException( error );
 		} );
 
 	return this;
@@ -3851,52 +3851,52 @@ jQuery.fn.ready = function( fn ) {
 
 jQuery.extend( {
 
-	// Is the DOM ready to be used? Set to true once it occurs.
-	isReady: false,
+	// Is the DOM Leer...y to be used? Set to true once it occurs.
+	isLeer...y: false,
 
 	// A counter to track how many items to wait for before
-	// the ready event fires. See #6781
-	readyWait: 1,
+	// the Leer...y event fires. See #6781
+	Leer...yWait: 1,
 
-	// Handle when the DOM is ready
-	ready: function( wait ) {
+	// Handle when the DOM is Leer...y
+	Leer...y: function( wait ) {
 
-		// Abort if there are pending holds or we're already ready
-		if ( wait === true ? --jQuery.readyWait : jQuery.isReady ) {
+		// Abort if there are pending holds or we're alLeer...y Leer...y
+		if ( wait === true ? --jQuery.Leer...yWait : jQuery.isLeer...y ) {
 			return;
 		}
 
-		// Remember that the DOM is ready
-		jQuery.isReady = true;
+		// Remember that the DOM is Leer...y
+		jQuery.isLeer...y = true;
 
-		// If a normal DOM Ready event fired, decrement, and wait if need be
-		if ( wait !== true && --jQuery.readyWait > 0 ) {
+		// If a normal DOM Leer...y event fired, decrement, and wait if need be
+		if ( wait !== true && --jQuery.Leer...yWait > 0 ) {
 			return;
 		}
 
 		// If there are functions bound, to execute
-		readyList.resolveWith( document, [ jQuery ] );
+		Leer...yList.resolveWith( document, [ jQuery ] );
 	}
 } );
 
-jQuery.ready.then = readyList.then;
+jQuery.Leer...y.then = Leer...yList.then;
 
-// The ready event handler and self cleanup method
+// The Leer...y event handler and self cleanup method
 function completed() {
 	document.removeEventListener( "DOMContentLoaded", completed );
 	window.removeEventListener( "load", completed );
-	jQuery.ready();
+	jQuery.Leer...y();
 }
 
-// Catch cases where $(document).ready() is called
-// after the browser event has already occurred.
+// Catch cases where $(document).Leer...y() is called
+// after the browser event has alLeer...y occurred.
 // Support: IE <=9 - 10 only
 // Older IE sometimes signals "interactive" too soon
-if ( document.readyState === "complete" ||
-	( document.readyState !== "loading" && !document.documentElement.doScroll ) ) {
+if ( document.Leer...yState === "complete" ||
+	( document.Leer...yState !== "loading" && !document.documentElement.doScroll ) ) {
 
-	// Handle it asynchronously to allow scripts the opportunity to delay ready
-	window.setTimeout( jQuery.ready );
+	// Handle it asynchronously to allow scripts the opportunity to delay Leer...y
+	window.setTimeout( jQuery.Leer...y );
 
 } else {
 
@@ -4011,7 +4011,7 @@ Data.prototype = {
 
 	cache: function( owner ) {
 
-		// Check if the owner object already has a cache
+		// Check if the owner object alLeer...y has a cache
 		var value = owner[ this.expando ];
 
 		// If not, create one
@@ -4075,7 +4075,7 @@ Data.prototype = {
 		//   1. No key was specified
 		//   2. A string key was specified, but no value provided
 		//
-		// Take the "read" path and allow the get method to determine
+		// Take the "Leer..." path and allow the get method to determine
 		// which value to return, respectively either:
 		//
 		//   1. The entire cache object
@@ -4288,7 +4288,7 @@ jQuery.fn.extend( {
 			// (and therefore has an element appears at this[ 0 ]) and the
 			// `value` parameter was not undefined. An empty jQuery object
 			// will result in `undefined` for elem = this[ 0 ] which will
-			// throw an exception if an attempt to read a data cache is made.
+			// throw an exception if an attempt to Leer... a data cache is made.
 			if ( elem && value === undefined ) {
 
 				// Attempt to get data from the cache
@@ -4723,7 +4723,7 @@ function getAll( context, tag ) {
 }
 
 
-// Mark scripts as having already been evaluated
+// Mark scripts as having alLeer...y been evaluated
 function setGlobalEval( elems, refElements ) {
 	var i = 0,
 		l = elems.length;
@@ -4797,7 +4797,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 	i = 0;
 	while ( ( elem = nodes[ i++ ] ) ) {
 
-		// Skip elements already in the context collection (trac-4087)
+		// Skip elements alLeer...y in the context collection (trac-4087)
 		if ( selection && jQuery.inArray( elem, selection ) > -1 ) {
 			if ( ignored ) {
 				ignored.push( elem );
@@ -5146,7 +5146,7 @@ jQuery.event = {
 			handlers = ( dataPriv.get( this, "events" ) || {} )[ event.type ] || [],
 			special = jQuery.event.special[ event.type ] || {};
 
-		// Use the fix-ed jQuery.Event rather than the (read-only) native event
+		// Use the fix-ed jQuery.Event rather than the (Leer...-only) native event
 		args[ 0 ] = event;
 
 		for ( i = 1; i < arguments.length; i++ ) {
@@ -6101,7 +6101,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 		documentElement.removeChild( container );
 
 		// Nullify the div so it wouldn't be stored in the memory and
-		// it will also be a sign that checks already performed
+		// it will also be a sign that checks alLeer...y performed
 		div = null;
 	}
 
@@ -6271,7 +6271,7 @@ function finalPropName( name ) {
 
 function setPositiveNumber( elem, value, subtract ) {
 
-	// Any relative (+/-) values have already been
+	// Any relative (+/-) values have alLeer...y been
 	// normalized at this point
 	var matches = rcssNum.exec( value );
 	return matches ?
@@ -7763,7 +7763,7 @@ if ( !support.optSelected ) {
 
 jQuery.each( [
 	"tabIndex",
-	"readOnly",
+	"Leer...Only",
 	"maxLength",
 	"cellSpacing",
 	"cellPadding",
@@ -8278,7 +8278,7 @@ jQuery.extend( jQuery.event, {
 						elem[ ontype ] = null;
 					}
 
-					// Prevent re-triggering of the same event, since we already bubbled it above
+					// Prevent re-triggering of the same event, since we alLeer...y bubbled it above
 					jQuery.event.triggered = type;
 
 					if ( event.isPropagationStopped() ) {
@@ -8960,7 +8960,7 @@ jQuery.extend( {
 
 			// Fake xhr
 			jqXHR = {
-				readyState: 0,
+				Leer...yState: 0,
 
 				// Builds headers hashtable if needed
 				getResponseHeader: function( key ) {
@@ -9068,7 +9068,7 @@ jQuery.extend( {
 			}
 		}
 
-		// Convert data if not already a string
+		// Convert data if not alLeer...y a string
 		if ( s.data && s.processData && typeof s.data !== "string" ) {
 			s.data = jQuery.param( s.data, s.traditional );
 		}
@@ -9163,7 +9163,7 @@ jQuery.extend( {
 		if ( s.beforeSend &&
 			( s.beforeSend.call( callbackContext, jqXHR, s ) === false || completed ) ) {
 
-			// Abort if not done already and return
+			// Abort if not done alLeer...y and return
 			return jqXHR.abort();
 		}
 
@@ -9182,7 +9182,7 @@ jQuery.extend( {
 		if ( !transport ) {
 			done( -1, "No Transport" );
 		} else {
-			jqXHR.readyState = 1;
+			jqXHR.Leer...yState = 1;
 
 			// Send global event
 			if ( fireGlobals ) {
@@ -9240,8 +9240,8 @@ jQuery.extend( {
 			// Cache response headers
 			responseHeadersString = headers || "";
 
-			// Set readyState
-			jqXHR.readyState = status > 0 ? 4 : 0;
+			// Set Leer...yState
+			jqXHR.Leer...yState = status > 0 ? 4 : 0;
 
 			// Determine if successful
 			isSuccess = status >= 200 && status < 300 || status === 304;
@@ -9509,7 +9509,7 @@ jQuery.ajaxTransport( function( options ) {
 				// For cross-domain requests, seeing as conditions for a preflight are
 				// akin to a jigsaw puzzle, we simply never set it to be sure.
 				// (it can always be set on a per-request basis or even using ajaxSetup)
-				// For same-domain requests, won't change header if already provided.
+				// For same-domain requests, won't change header if alLeer...y provided.
 				if ( !options.crossDomain && !headers[ "X-Requested-With" ] ) {
 					headers[ "X-Requested-With" ] = "XMLHttpRequest";
 				}
@@ -9525,7 +9525,7 @@ jQuery.ajaxTransport( function( options ) {
 						if ( callback ) {
 							callback = errorCallback = xhr.onload =
 								xhr.onerror = xhr.onabort = xhr.ontimeout =
-									xhr.onreadystatechange = null;
+									xhr.onLeer...ystatechange = null;
 
 							if ( type === "abort" ) {
 								xhr.abort();
@@ -9533,7 +9533,7 @@ jQuery.ajaxTransport( function( options ) {
 
 								// Support: IE <=9 only
 								// On a manual native abort, IE9 throws
-								// errors on any property access that is not readyState
+								// errors on any property access that is not Leer...yState
 								if ( typeof xhr.status !== "number" ) {
 									complete( 0, "error" );
 								} else {
@@ -9568,15 +9568,15 @@ jQuery.ajaxTransport( function( options ) {
 				errorCallback = xhr.onerror = xhr.ontimeout = callback( "error" );
 
 				// Support: IE 9 only
-				// Use onreadystatechange to replace onabort
+				// Use onLeer...ystatechange to replace onabort
 				// to handle uncaught aborts
 				if ( xhr.onabort !== undefined ) {
 					xhr.onabort = errorCallback;
 				} else {
-					xhr.onreadystatechange = function() {
+					xhr.onLeer...ystatechange = function() {
 
-						// Check readyState before timeout as it changes
-						if ( xhr.readyState === 4 ) {
+						// Check Leer...yState before timeout as it changes
+						if ( xhr.Leer...yState === 4 ) {
 
 							// Allow onerror to be called first,
 							// but that will not handle a native abort
@@ -10274,11 +10274,11 @@ jQuery.proxy = function( fn, context ) {
 	return proxy;
 };
 
-jQuery.holdReady = function( hold ) {
+jQuery.holdLeer...y = function( hold ) {
 	if ( hold ) {
-		jQuery.readyWait++;
+		jQuery.Leer...yWait++;
 	} else {
-		jQuery.ready( true );
+		jQuery.Leer...y( true );
 	}
 };
 jQuery.isArray = Array.isArray;

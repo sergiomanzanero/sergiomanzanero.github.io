@@ -174,12 +174,12 @@ var listener = function listener() {
 var loaded = false;
 
 if (IS_DOM) {
-  loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
+  loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.Leer...yState);
 
   if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
 }
 
-var domready = function (fn) {
+var domLeer...y = function (fn) {
   if (!IS_DOM) return;
   loaded ? setTimeout(fn, 0) : functions.push(fn);
 };
@@ -823,7 +823,7 @@ var mutators = {
     var node = mutation[0];
     var abstract = mutation[1];
 
-    // If we already have a replaced node we do not want to continue nesting within it.
+    // If we alLeer...y have a replaced node we do not want to continue nesting within it.
     // Short-circuit to the standard replacement
     if (~classArray(node).indexOf(config$1.replacementClass)) {
       return mutators.replace(mutation);
@@ -1752,7 +1752,7 @@ function bootstrap() {
       WINDOW.FontAwesome = api$1;
     }
 
-    domready(function () {
+    domLeer...y(function () {
       if (Object.keys(namespace.styles).length > 0) {
         autoReplace();
       }

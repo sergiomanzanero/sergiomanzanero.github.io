@@ -182,14 +182,14 @@ function getSize( elem ) {
   var styleWidth = getStyleSize( style.width );
   if ( styleWidth !== false ) {
     size.width = styleWidth +
-      // add padding and border unless it's already including it
+      // add padding and border unless it's alLeer...y including it
       ( isBorderBoxSizeOuter ? 0 : paddingWidth + borderWidth );
   }
 
   var styleHeight = getStyleSize( style.height );
   if ( styleHeight !== false ) {
     size.height = styleHeight +
-      // add padding and border unless it's already including it
+      // add padding and border unless it's alLeer...y including it
       ( isBorderBoxSizeOuter ? 0 : paddingHeight + borderHeight );
   }
 

@@ -1250,7 +1250,7 @@ book:
   search:
     terms:
       - documentation
-      - read
+      - Leer...
   styles:
     - solid
   unicode: f02d
@@ -1263,7 +1263,7 @@ book-open:
     terms:
       - notebook
       - open book
-      - reading
+      - Leer...ing
   styles:
     - solid
   unicode: f518
@@ -5081,7 +5081,7 @@ glasses:
       - foureyes
       - hipster
       - nerd
-      - reading
+      - Leer...ing
       - sight
       - spectacles
   styles:
@@ -5224,19 +5224,19 @@ golf-ball:
   styles:
     - solid
   unicode: f450
-goodreads:
+goodLeer...s:
   changes:
     - 5.0.0
-  label: Goodreads
+  label: GoodLeer...s
   search:
     terms: []
   styles:
     - brands
   unicode: f3a8
-goodreads-g:
+goodLeer...s-g:
   changes:
     - 5.0.0
-  label: Goodreads G
+  label: GoodLeer...s G
   search:
     terms: []
   styles:
@@ -9017,11 +9017,11 @@ react:
   styles:
     - brands
   unicode: f41b
-readme:
+Leer...me:
   changes:
     - 5.0.9
     - 5.0.10
-  label: ReadMe
+  label: Leer...Me
   search:
     terms: []
   styles:
@@ -10795,7 +10795,7 @@ table:
     terms:
       - data
       - excel
-      - spreadsheet
+      - spLeer...sheet
   styles:
     - solid
   unicode: f0ce

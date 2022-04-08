@@ -3626,7 +3626,7 @@
     "search": {
       "terms": [
         "documentation",
-        "read"
+        "Leer..."
       ]
     },
     "styles": [
@@ -3660,7 +3660,7 @@
       "terms": [
         "notebook",
         "open book",
-        "reading"
+        "Leer...ing"
       ]
     },
     "styles": [
@@ -14865,7 +14865,7 @@
         "foureyes",
         "hipster",
         "nerd",
-        "reading",
+        "Leer...ing",
         "sight",
         "spectacles"
       ]
@@ -15192,7 +15192,7 @@
       }
     }
   },
-  "goodreads": {
+  "goodLeer...s": {
     "changes": [
       "5.0.0"
     ],
@@ -15204,7 +15204,7 @@
       "brands"
     ],
     "unicode": "f3a8",
-    "label": "Goodreads",
+    "label": "GoodLeer...s",
     "svg": {
       "brands": {
         "last_modified": 1500927880000,
@@ -15221,7 +15221,7 @@
       }
     }
   },
-  "goodreads-g": {
+  "goodLeer...s-g": {
     "changes": [
       "5.0.0"
     ],
@@ -15233,7 +15233,7 @@
       "brands"
     ],
     "unicode": "f3a9",
-    "label": "Goodreads G",
+    "label": "GoodLeer...s G",
     "svg": {
       "brands": {
         "last_modified": 1500927880000,
@@ -26559,7 +26559,7 @@
       }
     }
   },
-  "readme": {
+  "Leer...me": {
     "changes": [
       "5.0.9",
       "5.0.10"
@@ -26572,7 +26572,7 @@
       "brands"
     ],
     "unicode": "f4d5",
-    "label": "ReadMe",
+    "label": "Leer...Me",
     "svg": {
       "brands": {
         "last_modified": 1523653480522,
@@ -31796,7 +31796,7 @@
       "terms": [
         "data",
         "excel",
-        "spreadsheet"
+        "spLeer...sheet"
       ]
     },
     "styles": [

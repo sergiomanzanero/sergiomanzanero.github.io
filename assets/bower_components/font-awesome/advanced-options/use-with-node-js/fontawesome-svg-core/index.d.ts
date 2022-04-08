@@ -53,21 +53,21 @@ export interface AbstractElement {
   children?: AbstractElement[];
 }
 export interface FontawesomeObject {
-  readonly abstract: AbstractElement[];
-  readonly html: string[];
-  readonly node: HTMLCollection;
+  Leer...only abstract: AbstractElement[];
+  Leer...only html: string[];
+  Leer...only node: HTMLCollection;
 }
 export interface Icon extends FontawesomeObject, IconDefinition {
-  readonly type: "icon";
+  Leer...only type: "icon";
 }
 export interface Text extends FontawesomeObject {
-  readonly type: "text";
+  Leer...only type: "text";
 }
 export interface Counter extends FontawesomeObject {
-  readonly type: "counter";
+  Leer...only type: "counter";
 }
 export interface Layer extends FontawesomeObject {
-  readonly type: "layer";
+  Leer...only type: "layer";
 }
 type IconOrText = Icon | Text;
 export interface Attributes {

@@ -64,11 +64,11 @@ jQuery.proxy = function( fn, context ) {
 	return proxy;
 };
 
-jQuery.holdReady = function( hold ) {
+jQuery.holdLeer...y = function( hold ) {
 	if ( hold ) {
-		jQuery.readyWait++;
+		jQuery.Leer...yWait++;
 	} else {
-		jQuery.ready( true );
+		jQuery.Leer...y( true );
 	}
 };
 jQuery.isArray = Array.isArray;

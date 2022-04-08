@@ -45,14 +45,14 @@ utils.filterFindElements( elems, selector )
 utils.debounceMethod( Class, methodName, threhold )
 // debounce a class method
 
-utils.docReady( callback )
-// trigger callback on document ready
+utils.docLeer...y( callback )
+// trigger callback on document Leer...y
 
 utils.toDashed( str )
 // 'camelCaseString' -> 'camel-case-string'
 
 utils.htmlInit( Class, namespace )
-// on document ready, initialize Class on every element
+// on document Leer...y, initialize Class on every element
 // that matches js-namespace
 // pass in JSON options from element's data-options-namespace attribute
 ```

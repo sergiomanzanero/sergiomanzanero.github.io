@@ -1866,7 +1866,7 @@ pre code {
   opacity: 1;
 }
 
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled, .form-control[Leer...only] {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -4594,7 +4594,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
 }
 
-.breadcrumb {
+.bLeer...crumb {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -4606,26 +4606,26 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.bLeer...crumb-item + .bLeer...crumb-item {
   padding-left: 0.5rem;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.bLeer...crumb-item + .bLeer...crumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
   content: "/";
 }
 
-.breadcrumb-item + .breadcrumb-item:hover::before {
+.bLeer...crumb-item + .bLeer...crumb-item:hover::before {
   text-decoration: underline;
 }
 
-.breadcrumb-item + .breadcrumb-item:hover::before {
+.bLeer...crumb-item + .bLeer...crumb-item:hover::before {
   text-decoration: none;
 }
 
-.breadcrumb-item.active {
+.bLeer...crumb-item.active {
   color: #6c757d;
 }
 

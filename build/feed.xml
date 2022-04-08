@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devlopr</title>
-    <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</description>
+    <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and Leer...ability.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Mon, 04 Apr 2022 11:07:53 -0500</pubDate>
@@ -154,7 +154,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Likewise ! This will be helpful for the widgets. (About Author, Recent Articles).&lt;/p&gt;
+&lt;p&gt;Likewise ! This will be helpful for the widgets. (About Author, Artículos Recientes).&lt;/p&gt;
 
 &lt;h3 id=&quot;adding-author-to-post&quot;&gt;Adding Author to Post&lt;/h3&gt;
 
@@ -422,7 +422,7 @@ If you aren’t familiar with Jekyll yet, you should know that it is a static si
 
 ### Steps to create your blog using devlopr-jekyll and Host using Github Pages :
 
-&gt;  **Step 1.**  Fork the repo - [click here](https://github.com/sujaykundu777/devlopr-jekyll/fork)
+&gt;  **Step 1.**  Fork the repo - [click here](https://github.com/sergiomanzanero/fork)
 
 ![Devlopr Jekyll Repo](/assets/img/posts/fork1.PNG){:class=&quot;img-fluid&quot;}
 
@@ -518,7 +518,7 @@ Visit [http://localhost:4000](http://localhost:4000) for development server
 
 ### Adding Content
 
-Start populating your blog by adding your .md files in _posts. devlopr-jekyll already has a few examples.
+Start populating your blog by adding your .md files in _posts. devlopr-jekyll alLeer...y has a few examples.
 
 #### YAML Post Example:
 

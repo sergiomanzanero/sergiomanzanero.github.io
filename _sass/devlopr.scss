@@ -1,5 +1,9 @@
 /* devlopr-jekyll styling */
 
+#js-mkw-makerwidget__wrap, #bmc-wbtn, .buy-button .snipcart-add-item .btn-lg .∆ btn-warning{
+    display: none
+}
+
 /* variables */
 $body-typeface:'Quicksand', sans-serif;
 $nav-typeface: "Gill sans";
@@ -417,7 +421,7 @@ header {
     }
   }
 
-.breadcrumb {
+.bLeer...crumb {
     margin-top: 45px !important;
     /* margin-right: 20px !important; */
     margin-bottom: 20px !important;
