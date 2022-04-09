@@ -1,7 +1,7 @@
 ---
 title: Empezando
 layout: page
-permalink: /comienzos
+permalink: /empezamos
 ---
 
 
