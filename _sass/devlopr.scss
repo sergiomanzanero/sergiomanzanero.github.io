@@ -1,8 +1,6 @@
 /* devlopr-jekyll styling */
 
-#js-mkw-makerwidget__wrap, #bmc-wbtn, .buy-button .snipcart-add-item .btn-lg .btn-warning{
-    display: none;
-}
+
 
 /* variables */
 $body-typeface:'Quicksand', sans-serif;
@@ -385,7 +383,7 @@ header {
   }
 
   .search-results {
-    display: none;
+    display: flexƒ;
     height: 80vh;
     overflow: auto;
     white-space: normal;
@@ -573,7 +571,7 @@ header {
 /* floating btn for buy me coffee */
 #bmc-wbtn{
     bottom: 40px !important;
-    display: none !important;
+    
 }
 
 /* Disqus */

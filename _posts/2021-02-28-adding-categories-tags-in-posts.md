@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Adding Multiple Categories in Posts"
-summary: "Learn how to add categories in posts"
-author: xplor4r
-date: '2021-02-28 1:35:23 +0530'
+title:  "Trabajando..."
+summary: "Un proyecto de código abierto"
+author: sergio
+date: '2022-04-16 1:35:23 +0530'
 category: ['jekyll','guides', 'sample_category']
 tags: jekyll
 thumbnail: /assets/img/posts/code.jpg
@@ -22,11 +22,7 @@ category: ['jekyll', 'guides', 'sample_category']
 ---
 ```
 
-Then to render this category using link and pages. All we need to do is,
 
-1. Create a new file with [your_category_name].md inside categories folder.
-
-2. Copy categories/sample_category.md file and replace the content in [your_category_name].md in that. (Please don't copy the code below its just sample, since it renders the jekyll syntax dynamically)
 
 ```jsx
 ---
@@ -35,7 +31,7 @@ title: Guides
 permalink: /blog/categories/your_category_name/
 ---
 
-<h5> Posts by Category : {{ page.title }} </h5>
+<h5> Otros post de la categoría : {{ page.title }} </h5>
 
 <div class="card">
 {% for post in site.categories.your_category_name %}
@@ -43,6 +39,3 @@ permalink: /blog/categories/your_category_name/
 {% endfor %}
 </div>
 ```
-
-Using the category, all the posts associated with the category will be listed on
-`http://localhost:4000/blog/categories/your_category_name`
