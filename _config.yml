@@ -18,8 +18,7 @@ urls:
       url : /servicios
     - text: Contacto
       url : /contacto
-    - text: Shop
-      url : /product
+    
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
