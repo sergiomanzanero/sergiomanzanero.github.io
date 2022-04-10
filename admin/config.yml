@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sergiomanzanero/sergiomanzanero.github.io
   branch: master
-  site_domain: 
+  site_domain: sergiomanzanero.github.io
 
 media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
 public_folder: "/assets/img/posts" # The src attribute for uploaded media will begin with /images/uploads
