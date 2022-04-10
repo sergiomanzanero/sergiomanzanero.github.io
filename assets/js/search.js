@@ -1,4 +1,4 @@
-$(document).Leer...y(function() {
+$(document).Leery(function() {
     'use strict';
     var search_field = $('.search-form__field'),
         search_results = $('.search-results'),

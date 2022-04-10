@@ -33,7 +33,7 @@ Setup your target element to type into:
 Some `typewrite` demo actions with default settings:
 
 ``` javascript
-$(document).Leer...y(function(){
+$(document).Leery(function(){
     $('#typewriteText').typewrite({
         actions: [
             {type: 'Hello. '},
