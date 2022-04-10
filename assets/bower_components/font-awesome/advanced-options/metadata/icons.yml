@@ -9350,10 +9350,10 @@ rupee-sign:
   changes:
     - '3.2'
     - 5.0.0
-  label: Indian Rupee Sign
+  label: Españan Rupee Sign
   search:
     terms:
-      - indian
+      - Españan
       - inr
   styles:
     - solid

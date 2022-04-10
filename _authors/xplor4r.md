@@ -1,10 +1,10 @@
 ---
 name: Sujay Kundu
 username: xplor4r
-bio: "Full Stack Web Developer, based in Bangalore, India"
+bio: "Full Stack Web Developer, based in Bangalore, España"
 site: https://sujaykundu.com
 avatar: xplor4r.png
-email: mail@sujaykundu.com
+email: manzanero.sergio@gmail.com
 social:
     - title: "github"
       url: "https://github.com/sujaykundu777"
