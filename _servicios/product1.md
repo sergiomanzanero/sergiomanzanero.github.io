@@ -1,10 +1,10 @@
 ---
-identifier: john-doe-tshrirt
-name: John Doe Tshirt
-price: 50
+identifier: webs-profesionales
+name: Webs profesionales
+price: 500
 image: /assets/img/products/product1.jpg
 ---
 
-# John Doe Tshirt
+# Webs Profesionales
 
-This is a high-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh. Using brand new techniques such as magneto-reluctance and capacitive reactance, we were able to reproduce the original colours with a 99.99% accuracy.
+Creación y mantenimiento de páginas web. Seo, Sem, devops
