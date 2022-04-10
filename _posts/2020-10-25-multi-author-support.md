@@ -112,7 +112,7 @@ janedoe:
 
 ```
 
-Likewise ! This will be helpful for the widgets. (About Author, Recent Articles).
+Likewise ! This will be helpful for the widgets. (About Author, Artículos Recientes).
 
 ### Adding Author to Post
 
