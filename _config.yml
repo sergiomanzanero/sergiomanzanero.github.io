@@ -15,7 +15,7 @@ urls:
     - text: Blog
       url: /blog
     - text: Servicios
-      url : /servicio
+      url : /servicios
     - text: Contacto
       url : /contacto
 
