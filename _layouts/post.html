@@ -11,7 +11,7 @@ layout: default
 <div class="row">
   <div class="col-md-4">
     <div class="card">
-      <div class="card-header">Sobre {{site.author}}</div>
+      <div class="card-header">About {{site.author}}</div>
       <div class="card-body">
         <p class="author_bio">{{ site.author_bio }}</p>
         {%- include github_star_button.html -%}
@@ -20,7 +20,7 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="card">
-      <div class="card-header">Categorias</div>
+      <div class="card-header">Categories</div>
       <div class="card-body text-dark">
         {%- include blog_categories.html -%}
       </div>
@@ -28,7 +28,7 @@ layout: default
   </div>
   <div class="col-md-4">
     <div class="card">
-      <div class="card-header">Links habituales</div>
+      <div class="card-header">Useful Links</div>
       <div class="card-body text-dark">
         {% for i in site.urls %}
         <li>

@@ -17,7 +17,7 @@ Data.prototype = {
 
 	cache: function( owner ) {
 
-		// Check if the owner object alLeer...y has a cache
+		// Check if the owner object already has a cache
 		var value = owner[ this.expando ];
 
 		// If not, create one
@@ -81,7 +81,7 @@ Data.prototype = {
 		//   1. No key was specified
 		//   2. A string key was specified, but no value provided
 		//
-		// Take the "Leer..." path and allow the get method to determine
+		// Take the "read" path and allow the get method to determine
 		// which value to return, respectively either:
 		//
 		//   1. The entire cache object

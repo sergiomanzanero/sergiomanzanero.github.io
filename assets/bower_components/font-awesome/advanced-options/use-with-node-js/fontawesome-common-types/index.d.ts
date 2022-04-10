@@ -631,8 +631,8 @@ export type IconName = 'address-book' |
   'glide' | 
   'glide-g' | 
   'gofore' | 
-  'goodLeer...s' | 
-  'goodLeer...s-g' | 
+  'goodreads' | 
+  'goodreads-g' | 
   'google' | 
   'google-drive' | 
   'google-play' | 
@@ -956,7 +956,7 @@ export type IconName = 'address-book' |
   'r-project' | 
   'ravelry' | 
   'react' | 
-  'Leer...me' | 
+  'readme' | 
   'rebel' | 
   'red-river' | 
   'reddit' | 

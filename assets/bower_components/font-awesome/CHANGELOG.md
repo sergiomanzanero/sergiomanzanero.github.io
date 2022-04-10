@@ -93,7 +93,7 @@ information.**
 * Updating pied-piper, adding pied-piper-hat
 
 ### Fixed
-* Correcting path errors on Leer...me icon FortAwesome/Font-Awesome#12754
+* Correcting path errors on readme icon FortAwesome/Font-Awesome#12754
 * Light style of lamp icon FortAwesome/Font-Awesome#12725
 
 ---
@@ -107,7 +107,7 @@ information.**
 * New icons hands and hand-holding
 
 ### Changed
-* Updated flipboard, Leer...me, and houzz brand icon
+* Updated flipboard, readme, and houzz brand icon
 * Making all solid icons in the medical icon pack free
 * Updated hand-holding-box and hand-receiving in the Light style
 
@@ -170,7 +170,7 @@ information.**
 ## [5.0.4](https://github.com/FortAwesome/Font-Awesome-Pro/releases/tag/5.0.4)  - 2018-01-10
 
 ### Changed
-* Updating all NPM package Leer...MEs
+* Updating all NPM package READMEs
 
 ### Fixed
 * Improving TypeScript exports and fixing some incorrect definitions

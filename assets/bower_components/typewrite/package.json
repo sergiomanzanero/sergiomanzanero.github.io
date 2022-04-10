@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/mrvautin/typewrite/issues"
   },
-  "homepage": "https://github.com/mrvautin/typewrite#Leer...me",
+  "homepage": "https://github.com/mrvautin/typewrite#readme",
   "dependencies": {
     "uglify-js": "^2.7.5"
   }

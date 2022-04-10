@@ -82,7 +82,7 @@ before upgrading:
      template for an example).
    * The outer node *must* be assigned a class ``gh-search-item``.
 
-That's it. With those changes, your theme should be Leer...y for ghostHunter 0.5.0.
+That's it. With those changes, your theme should be ready for ghostHunter 0.5.0.
 
 ## Basic setup
 
@@ -93,7 +93,7 @@ In your theme directory, navigate to the `assets` subdirectory, <a name="r1" hre
   git clone https://github.com/jamalneufeld/ghostHunter.git --recursive
 ```
 
-After cloning, the ghostHunter module will be located at `assets/ghostHunter/dist/jquery.ghosthunter.js`. <a name="r3" href="#f3">[3]</a> This is a human-Leer...able "raw" copy of the module, and can be loaded directly in your theme templates for testing. (It will run just fine, but it contains a lot of whitespace and comments, and should be "minified" for production use [see below]).
+After cloning, the ghostHunter module will be located at `assets/ghostHunter/dist/jquery.ghosthunter.js`. <a name="r3" href="#f3">[3]</a> This is a human-readable "raw" copy of the module, and can be loaded directly in your theme templates for testing. (It will run just fine, but it contains a lot of whitespace and comments, and should be "minified" for production use [see below]).
 
 To test the module in your template, add the following line, after JQuery is loaded. Typically this will be near the bottom of a file `default.hbs`, in the top folder of the theme directory.
 
@@ -180,7 +180,7 @@ the previous section sets the `results` option.
 
 > A Handlebars template used to display the number of search items returned.
 >
-> Default template is <code>&lt;p&gt;Coincidencias: {{amount}}&lt;/p&gt;</code>
+> Default template is <code>&lt;p&gt;Number of posts found: {{amount}}&lt;/p&gt;</code>
 
 :arrow_right: **displaySearchInfo**
 
@@ -338,7 +338,7 @@ search fields with a coding pattern like the following: <a name="r5" href="#f5">
 ```html
 <form role="search" method="get" class="search-form" action="#">
   <label>
-    <span class="screen-Leer...er-text">Search for:</span>
+    <span class="screen-reader-text">Search for:</span>
     <input type="search" class="search-field-desktop" placeholder="Search …">
   </label>
   <input type="submit" class="search-submit" value="Search">
@@ -447,7 +447,7 @@ Once you are able to rebuild ghostHunter, you can edit the source file at ``src/
   - ``item_preprocessor`` callback
   - ``indexing_start`` callback
   - ``indexing_end`` callback
-* Edits to Leer...ME
+* Edits to README
 
 ## Version 0.4.0 notes
 

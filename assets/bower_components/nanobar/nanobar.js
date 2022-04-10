@@ -8,7 +8,7 @@
   function addCss () {
     var s = document.getElementById('nanobarcss')
 
-    // check whether style tag is alLeer...y inserted
+    // check whether style tag is already inserted
     if (s === null) {
       s = document.createElement('style')
       s.type = 'text/css'

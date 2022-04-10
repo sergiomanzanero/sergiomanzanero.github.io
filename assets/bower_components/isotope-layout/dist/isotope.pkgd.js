@@ -449,14 +449,14 @@ function getSize( elem ) {
   var styleWidth = getStyleSize( style.width );
   if ( styleWidth !== false ) {
     size.width = styleWidth +
-      // add padding and border unless it's alLeer...y including it
+      // add padding and border unless it's already including it
       ( isBorderBoxSizeOuter ? 0 : paddingWidth + borderWidth );
   }
 
   var styleHeight = getStyleSize( style.height );
   if ( styleHeight !== false ) {
     size.height = styleHeight +
-      // add padding and border unless it's alLeer...y including it
+      // add padding and border unless it's already including it
       ( isBorderBoxSizeOuter ? 0 : paddingHeight + borderHeight );
   }
 
@@ -588,7 +588,7 @@ var arraySlice = Array.prototype.slice;
 // turn element or nodeList into an array
 utils.makeArray = function( obj ) {
   if ( Array.isArray( obj ) ) {
-    // use object if alLeer...y an array
+    // use object if already an array
     return obj;
   }
   // return empty array if undefined or null. #6
@@ -700,11 +700,11 @@ utils.debounceMethod = function( _class, methodName, threshold ) {
   };
 };
 
-// ----- docLeer...y ----- //
+// ----- docReady ----- //
 
-utils.docLeer...y = function( callback ) {
-  var Leer...yState = document.Leer...yState;
-  if ( Leer...yState == 'complete' || Leer...yState == 'interactive' ) {
+utils.docReady = function( callback ) {
+  var readyState = document.readyState;
+  if ( readyState == 'complete' || readyState == 'interactive' ) {
     // do async to allow for other scripts to run. metafizzy/flickity#441
     setTimeout( callback );
   } else {
@@ -728,7 +728,7 @@ var console = window.console;
  * options are parsed from data-namespace-options
  */
 utils.htmlInit = function( WidgetClass, namespace ) {
-  utils.docLeer...y( function() {
+  utils.docReady( function() {
     var dashedNamespace = utils.toDashed( namespace );
     var dataAttr = 'data-' + dashedNamespace;
     var dataAttrElems = document.querySelectorAll( '[' + dataAttr + ']' );

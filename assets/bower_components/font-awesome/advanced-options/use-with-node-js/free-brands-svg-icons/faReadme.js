@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 var prefix = 'fab';
-var iconName = 'Leer...me';
+var iconName = 'readme';
 var width = 576;
 var height = 512;
 var ligatures = [];
@@ -19,7 +19,7 @@ exports.definition = {
     svgPathData
   ]};
   
-exports.faLeer...me = exports.definition;           
+exports.faReadme = exports.definition;           
 exports.prefix = prefix;
 exports.iconName = iconName; 
 exports.width = width;

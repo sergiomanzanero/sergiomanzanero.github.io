@@ -4,7 +4,7 @@ define( [
 
 "use strict";
 
-jQuery.Leer...yException = function( error ) {
+jQuery.readyException = function( error ) {
 	window.setTimeout( function() {
 		throw error;
 	} );

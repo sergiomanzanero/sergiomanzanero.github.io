@@ -52,7 +52,7 @@ jQuery.Callbacks = function( options ) {
 		// Last fire value for non-forgettable lists
 		memory,
 
-		// Flag to know if list was alLeer...y fired
+		// Flag to know if list was already fired
 		fired,
 
 		// Flag to prevent firing
@@ -223,7 +223,7 @@ jQuery.Callbacks = function( options ) {
 				return this;
 			},
 
-			// To know if the callbacks have alLeer...y been called at least once
+			// To know if the callbacks have already been called at least once
 			fired: function() {
 				return !!fired;
 			}

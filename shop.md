@@ -1,5 +1,5 @@
 ---
-title: Servicios
-layout: servicios
-permalink: /servicios/
+title: Shop
+layout: product
+permalink: /shop/
 ---

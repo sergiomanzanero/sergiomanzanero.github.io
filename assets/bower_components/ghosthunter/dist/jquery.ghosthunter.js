@@ -220,7 +220,7 @@ lunr.Token.prototype.clone = function (fn) {
  */
 
 /**
- * A function for splitting a string into tokens Leer...y to be inserted into
+ * A function for splitting a string into tokens ready to be inserted into
  * the search index. Uses `lunr.tokenizer.separator` to split strings, change
  * the value of this property to change how strings are split into tokens.
  *
@@ -377,7 +377,7 @@ lunr.Pipeline.warnIfFunctionNotRegistered = function (fn) {
 /**
  * Loads a previously serialised pipeline.
  *
- * All functions to be loaded must alLeer...y be registered with lunr.Pipeline.
+ * All functions to be loaded must already be registered with lunr.Pipeline.
  * If any function from the serialised data has not been registered then an
  * error will be thrown.
  *
@@ -417,12 +417,12 @@ lunr.Pipeline.prototype.add = function () {
 }
 
 /**
- * Adds a single function after a function that alLeer...y exists in the
+ * Adds a single function after a function that already exists in the
  * pipeline.
  *
  * Logs a warning if the function has not been registered.
  *
- * @param {lunr.PipelineFunction} existingFn - A function that alLeer...y exists in the pipeline.
+ * @param {lunr.PipelineFunction} existingFn - A function that already exists in the pipeline.
  * @param {lunr.PipelineFunction} newFn - The new function to add to the pipeline.
  */
 lunr.Pipeline.prototype.after = function (existingFn, newFn) {
@@ -438,12 +438,12 @@ lunr.Pipeline.prototype.after = function (existingFn, newFn) {
 }
 
 /**
- * Adds a single function before a function that alLeer...y exists in the
+ * Adds a single function before a function that already exists in the
  * pipeline.
  *
  * Logs a warning if the function has not been registered.
  *
- * @param {lunr.PipelineFunction} existingFn - A function that alLeer...y exists in the pipeline.
+ * @param {lunr.PipelineFunction} existingFn - A function that already exists in the pipeline.
  * @param {lunr.PipelineFunction} newFn - The new function to add to the pipeline.
  */
 lunr.Pipeline.prototype.before = function (existingFn, newFn) {
@@ -521,7 +521,7 @@ lunr.Pipeline.prototype.reset = function () {
 }
 
 /**
- * Returns a representation of the pipeline Leer...y for serialisation.
+ * Returns a representation of the pipeline ready for serialisation.
  *
  * Logs a warning if the function has not been registered.
  *
@@ -617,7 +617,7 @@ lunr.Vector.prototype.positionForIndex = function (index) {
 /**
  * Inserts an element at an index within the vector.
  *
- * Does not allow duplicates, will throw an error if there is alLeer...y an entry
+ * Does not allow duplicates, will throw an error if there is already an entry
  * for this index.
  *
  * @param {Number} insertIdx - The index at which the element should be inserted.
@@ -1542,9 +1542,9 @@ lunr.TokenSet.prototype.intersect = function (b) {
               next = undefined
 
           if (nEdge in frame.output.edges) {
-            // an edge alLeer...y exists for this character
+            // an edge already exists for this character
             // no need to create a new node, just set the finality
-            // bit unless this node is alLeer...y final
+            // bit unless this node is already final
             next = frame.output.edges[nEdge]
             next.final = next.final || final
 
@@ -1854,14 +1854,14 @@ lunr.Index.prototype.query = function (fn) {
           }
 
           /*
-           * Using upsert because there could alLeer...y be an entry in the vector
+           * Using upsert because there could already be an entry in the vector
            * for the term we are working with. In that case we just add the scores
            * together.
            */
           queryVectors[field].upsert(termIndex, 1 * clause.boost, function (a, b) { return a + b })
 
           /**
-           * If we've alLeer...y seen this term, field combo then we've alLeer...y collected
+           * If we've already seen this term, field combo then we've already collected
            * the matching documents and metadata, no need to go through all that again
            */
           if (termFieldCache[termField]) {
@@ -1872,7 +1872,7 @@ lunr.Index.prototype.query = function (fn) {
             /*
              * All metadata for this term/field/document triple
              * are then extracted and collected into an instance
-             * of lunr.MatchData Leer...y to be returned in the query
+             * of lunr.MatchData ready to be returned in the query
              * results
              */
             var matchingDocumentRef = matchingDocumentRefs[l],
@@ -2018,7 +2018,7 @@ lunr.Index.load = function (serializedIndex) {
 
 /**
  * lunr.Builder performs indexing on a set of documents and
- * returns instances of lunr.Index Leer...y for querying.
+ * returns instances of lunr.Index ready for querying.
  *
  * All configuration of the index is done via the builder, the
  * fields to index, the document reference, the text processing
@@ -2078,7 +2078,7 @@ lunr.Builder.prototype.ref = function (ref) {
  * not cause errors but will limit the chance of that document being retrieved by searches.
  *
  * All fields should be added before adding documents to the index. Adding fields after
- * a document has been indexed will have no effect on alLeer...y indexed documents.
+ * a document has been indexed will have no effect on already indexed documents.
  *
  * @param {string} field - The name of a field to index in all documents.
  */
@@ -2119,7 +2119,7 @@ lunr.Builder.prototype.k1 = function (number) {
  * Adds a document to the index.
  *
  * Before adding fields to the index the index should have been fully setup, with the document
- * ref and all fields to index alLeer...y having been specified.
+ * ref and all fields to index already having been specified.
  *
  * The document must have a field name as specified by the ref (by default this is 'id') and
  * it should have all fields defined for indexing, though null or undefined values will not
@@ -2457,8 +2457,8 @@ lunr.Query = function (allFields) {
  * @constant
  * @default
  * @property {number} wildcard.NONE - The term will have no wildcards inserted, this is the default behaviour
- * @property {number} wildcard.LEADING - Prepend the term with a wildcard, unless a leading wildcard alLeer...y exists
- * @property {number} wildcard.TRAILING - Append a wildcard to the term, unless a trailing wildcard alLeer...y exists
+ * @property {number} wildcard.LEADING - Prepend the term with a wildcard, unless a leading wildcard already exists
+ * @property {number} wildcard.TRAILING - Append a wildcard to the term, unless a trailing wildcard already exists
  * @see lunr.Query~Clause
  * @see lunr.Query#clause
  * @see lunr.Query#term
@@ -2705,7 +2705,7 @@ lunr.QueryLexer.lexEOS = function (lexer) {
 //
 // It is possible for the user to change the separator on the
 // tokenizer so it _might_ clash with any other of the special
-// characters alLeer...y used within the search string, e.g. :.
+// characters already used within the search string, e.g. :.
 //
 // This means that it is possible to change the separator in
 // such a way that makes some words unsearchable using a search
@@ -3166,7 +3166,7 @@ lunr.QueryParser.parseBoost = function (parser) {
 		onPageLoad			: false,
 		onKeyUp				: false,
 		result_template 	: "<a id='gh-{{ref}}' class='gh-search-item' href='{{link}}'><p><h2>{{title}}</h2><h4>{{prettyPubDate}}</h4></p></a>",
-		info_template		: "<p>Coincidencias: {{amount}}</p>",
+		info_template		: "<p>Number of posts found: {{amount}}</p>",
 		displaySearchInfo	: true,
 		zeroResultsInfo		: true,
 		before				: false,

@@ -229,12 +229,12 @@ var listener = function listener() {
 var loaded = false;
 
 if (IS_DOM) {
-  loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.Leer...yState);
+  loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
 
   if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
 }
 
-var domLeer...y = function (fn) {
+var domready = function (fn) {
   if (!IS_DOM) return;
   loaded ? setTimeout(fn, 0) : functions.push(fn);
 };
@@ -903,7 +903,7 @@ var mutators = {
     var node = mutation[0];
     var abstract = mutation[1];
 
-    // If we alLeer...y have a replaced node we do not want to continue nesting within it.
+    // If we already have a replaced node we do not want to continue nesting within it.
     // Short-circuit to the standard replacement
     if (~classArray(node).indexOf(config.replacementClass)) {
       return mutators.replace(mutation);
@@ -1397,7 +1397,7 @@ function searchPseudoElements(root) {
     }).forEach(function (node) {
       [':before', ':after'].forEach(function (pos) {
         var children = toArray(node.children);
-        var alLeer...yProcessedPseudoElement = children.filter(function (c) {
+        var alreadyProcessedPseudoElement = children.filter(function (c) {
           return c.getAttribute(DATA_FA_PSEUDO_ELEMENT) === pos;
         })[0];
 
@@ -1405,21 +1405,21 @@ function searchPseudoElements(root) {
         var fontFamily = styles.getPropertyValue('font-family').match(FONT_FAMILY_PATTERN);
         var fontWeight = styles.getPropertyValue('font-weight');
 
-        if (alLeer...yProcessedPseudoElement && !fontFamily) {
-          // If we've alLeer...y processed it but the current computed style does not result in a font-family,
+        if (alreadyProcessedPseudoElement && !fontFamily) {
+          // If we've already processed it but the current computed style does not result in a font-family,
           // that probably means that a class name that was previously present to make the icon has been
           // removed. So we now should delete the icon.
-          node.removeChild(alLeer...yProcessedPseudoElement);
+          node.removeChild(alreadyProcessedPseudoElement);
         } else if (fontFamily) {
           var content = styles.getPropertyValue('content');
           var prefix = ~['Light', 'Regular', 'Solid'].indexOf(fontFamily[1]) ? STYLE_TO_PREFIX[fontFamily[1]] : FONT_WEIGHT_TO_PREFIX[fontWeight];
           var iconName = byUnicode(prefix, toHex(content.length === 3 ? content.substr(1, 1) : content));
           // Only convert the pseudo element in this :before/:after position into an icon if we haven't
-          // alLeer...y done so with the same prefix and iconName
-          if (!alLeer...yProcessedPseudoElement || alLeer...yProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix || alLeer...yProcessedPseudoElement.getAttribute(DATA_ICON) !== iconName) {
-            if (alLeer...yProcessedPseudoElement) {
+          // already done so with the same prefix and iconName
+          if (!alreadyProcessedPseudoElement || alreadyProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix || alreadyProcessedPseudoElement.getAttribute(DATA_ICON) !== iconName) {
+            if (alreadyProcessedPseudoElement) {
               // Delete the old one, since we're replacing it with a new one
-              node.removeChild(alLeer...yProcessedPseudoElement);
+              node.removeChild(alreadyProcessedPseudoElement);
             }
 
             var extra = blankMeta.extra;
@@ -1754,7 +1754,7 @@ var dom = {
 
     config.observeMutations = true;
 
-    domLeer...y(function () {
+    domready(function () {
       autoReplace({
         autoReplaceSvgRoot: autoReplaceSvgRoot
       });

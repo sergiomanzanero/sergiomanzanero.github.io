@@ -37,7 +37,7 @@ If you want to use Isotope to develop commercial sites, themes, projects, and ap
 
 If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use Isotope under the terms of the GPLv3.
 
-[Leer... more about Isotope's license](https://isotope.metafizzy.co/license.html).
+[Read more about Isotope's license](https://isotope.metafizzy.co/license.html).
 
 ## Initialize
 

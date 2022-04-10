@@ -2,16 +2,16 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        pkg: grunt.file.Leer...JSON('package.json'),
+        pkg: grunt.file.readJSON('package.json'),
         copy: {
             ghosthunter_embedded_lunr: {
                 src: "src/<%= pkg.name %>.js",
                 dest: "dist/jquery.ghosthunter.js",
                 options: {
                     process: function(content, path) {
-                        var lunr = grunt.file.Leer...('./src/lunr.js');
+                        var lunr = grunt.file.read('./src/lunr.js');
                         content = content.replace(/\/\*\s+lunr\s+\*\//i, lunr);
-                        var levenshtein = grunt.file.Leer...('./src/levenshtein.js');
+                        var levenshtein = grunt.file.read('./src/levenshtein.js');
                         content = content.replace(/\/\*\s+levenshtein\s+\*\//i, levenshtein);
                         return grunt.template.process(content)
                     }
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                 options: {
                     process: function(content, path) {
                         content = content.replace(/\/\*\s+lunr\s+\*\//i, 'var lunr = require("lunr")');
-                        var levenshtein = grunt.file.Leer...('./src/levenshtein.js');
+                        var levenshtein = grunt.file.read('./src/levenshtein.js');
                         content = content.replace(/\/\*\s+levenshtein\s+\*\//i, levenshtein);
                         return grunt.template.process(content)
                     }

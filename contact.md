@@ -1,5 +1,5 @@
 ---
-title: Contacto
-layout: contacto
-permalink: /contacto/
+title: Contact
+layout: contact
+permalink: /contact/
 ---

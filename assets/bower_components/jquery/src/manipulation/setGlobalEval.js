@@ -4,7 +4,7 @@ define( [
 
 "use strict";
 
-// Mark scripts as having alLeer...y been evaluated
+// Mark scripts as having already been evaluated
 function setGlobalEval( elems, refElements ) {
 	var i = 0,
 		l = elems.length;

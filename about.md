@@ -1,5 +1,5 @@
 ---
-title: Sobre mí
-layout: sobre-mi
-permalink: /sobre-mi/
+title: About
+layout: about-me
+permalink: /about/
 ---

@@ -42,7 +42,7 @@
     return obj;
   }
 
-  function _objectSpLeer...(target) {
+  function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i] != null ? arguments[i] : {};
       var ownKeys = Object.keys(source);
@@ -734,7 +734,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, Default, config);
+        config = _objectSpread({}, Default, config);
         Util.typeCheckConfig(NAME, config, DefaultType);
         return config;
       };
@@ -936,10 +936,10 @@
         return this.each(function () {
           var data = $$$1(this).data(DATA_KEY);
 
-          var _config = _objectSpLeer...({}, Default, $$$1(this).data());
+          var _config = _objectSpread({}, Default, $$$1(this).data());
 
           if (typeof config === 'object') {
-            _config = _objectSpLeer...({}, _config, config);
+            _config = _objectSpread({}, _config, config);
           }
 
           var action = typeof config === 'string' ? config : _config.slide;
@@ -977,7 +977,7 @@
           return;
         }
 
-        var config = _objectSpLeer...({}, $$$1(target).data(), $$$1(this).data());
+        var config = _objectSpread({}, $$$1(target).data(), $$$1(this).data());
 
         var slideIndex = this.getAttribute('data-slide-to');
 
@@ -1270,7 +1270,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, Default, config);
+        config = _objectSpread({}, Default, config);
         config.toggle = Boolean(config.toggle); // Coerce string values
 
         Util.typeCheckConfig(NAME, config, DefaultType);
@@ -1325,7 +1325,7 @@
           var $this = $$$1(this);
           var data = $this.data(DATA_KEY);
 
-          var _config = _objectSpLeer...({}, Default, $this.data(), typeof config === 'object' && config ? config : {});
+          var _config = _objectSpread({}, Default, $this.data(), typeof config === 'object' && config ? config : {});
 
           if (!data && _config.toggle && /show|hide/.test(config)) {
             _config.toggle = false;
@@ -1704,7 +1704,7 @@
    * @method
    * @memberof Popper.Utils
    * @param {Object} rect - Rect object you want to change
-   * @param {HTMLElement} element - The element from the function Leer...s the scroll values
+   * @param {HTMLElement} element - The element from the function reads the scroll values
    * @param {Boolean} subtract - set to true if you want to subtract the scroll values
    * @return {Object} rect - The modifier rect object
    */
@@ -2848,7 +2848,7 @@
    * @static
    * @type {Array}
    * @enum {String}
-   * @Leer...only
+   * @readonly
    * @method placements
    * @memberof Popper
    */
@@ -3367,7 +3367,7 @@
     /**
      * Modifier used to shift the popper on the start or end of its reference
      * element.<br />
-     * It will Leer... the variation of the `placement` property.<br />
+     * It will read the variation of the `placement` property.<br />
      * It can be one either `-end` or `-start`.
      * @memberof modifiers
      * @inner
@@ -3414,7 +3414,7 @@
      * ```
      * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
      * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-     * > More on this [Leer...ing this issue](https://github.com/FezVrasta/popper.js/issues/373)
+     * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
      *
      * @memberof modifiers
      * @inner
@@ -3498,7 +3498,7 @@
     /**
      * This modifier is used to move the `arrowElement` of the popper to make
      * sure it is positioned between the reference element and its popper element.
-     * It will Leer... the outer size of the `arrowElement` node to detect how many
+     * It will read the outer size of the `arrowElement` node to detect how many
      * pixels of conjuction are needed.
      *
      * It has no effect if no `arrowElement` is provided.
@@ -4132,7 +4132,7 @@
       };
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, this.constructor.Default, $$$1(this._element).data(), config);
+        config = _objectSpread({}, this.constructor.Default, $$$1(this._element).data(), config);
         Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
         return config;
       };
@@ -4179,7 +4179,7 @@
 
         if (typeof this._config.offset === 'function') {
           offsetConf.fn = function (data) {
-            data.offsets = _objectSpLeer...({}, data.offsets, _this2._config.offset(data.offsets) || {});
+            data.offsets = _objectSpread({}, data.offsets, _this2._config.offset(data.offsets) || {});
             return data;
           };
         } else {
@@ -4603,7 +4603,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, Default, config);
+        config = _objectSpread({}, Default, config);
         Util.typeCheckConfig(NAME, config, DefaultType);
         return config;
       };
@@ -4890,7 +4890,7 @@
         return this.each(function () {
           var data = $$$1(this).data(DATA_KEY);
 
-          var _config = _objectSpLeer...({}, Default, $$$1(this).data(), typeof config === 'object' && config ? config : {});
+          var _config = _objectSpread({}, Default, $$$1(this).data(), typeof config === 'object' && config ? config : {});
 
           if (!data) {
             data = new Modal(this, _config);
@@ -4940,7 +4940,7 @@
         target = $$$1(selector)[0];
       }
 
-      var config = $$$1(target).data(DATA_KEY) ? 'toggle' : _objectSpLeer...({}, $$$1(target).data(), $$$1(this).data());
+      var config = $$$1(target).data(DATA_KEY) ? 'toggle' : _objectSpread({}, $$$1(target).data(), $$$1(this).data());
 
       if (this.tagName === 'A' || this.tagName === 'AREA') {
         event.preventDefault();
@@ -5403,7 +5403,7 @@
         });
 
         if (this.config.selector) {
-          this.config = _objectSpLeer...({}, this.config, {
+          this.config = _objectSpread({}, this.config, {
             trigger: 'manual',
             selector: ''
           });
@@ -5497,7 +5497,7 @@
       };
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, this.constructor.Default, $$$1(this.element).data(), typeof config === 'object' && config ? config : {});
+        config = _objectSpread({}, this.constructor.Default, $$$1(this.element).data(), typeof config === 'object' && config ? config : {});
 
         if (typeof config.delay === 'number') {
           config.delay = {
@@ -5666,14 +5666,14 @@
     var CLASS_PREFIX = 'bs-popover';
     var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
 
-    var Default = _objectSpLeer...({}, Tooltip.Default, {
+    var Default = _objectSpread({}, Tooltip.Default, {
       placement: 'right',
       trigger: 'click',
       content: '',
       template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
     });
 
-    var DefaultType = _objectSpLeer...({}, Tooltip.DefaultType, {
+    var DefaultType = _objectSpread({}, Tooltip.DefaultType, {
       content: '(string|element|function)'
     });
 
@@ -5983,7 +5983,7 @@
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpLeer...({}, Default, typeof config === 'object' && config ? config : {});
+        config = _objectSpread({}, Default, typeof config === 'object' && config ? config : {});
 
         if (typeof config.target !== 'string') {
           var id = $$$1(config.target).attr('id');

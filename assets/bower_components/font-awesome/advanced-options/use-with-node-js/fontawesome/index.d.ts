@@ -69,18 +69,18 @@ export interface AbstractElement {
   children?: AbstractElement[];
 }
 export interface FontawesomeObject {
-  Leer...only abstract: AbstractElement[];
-  Leer...only html: string[];
-  Leer...only node: HTMLCollection;
+  readonly abstract: AbstractElement[];
+  readonly html: string[];
+  readonly node: HTMLCollection;
 }
 export interface Icon extends FontawesomeObject, IconDefinition {
-  Leer...only type: "icon";
+  readonly type: "icon";
 }
 export interface Text extends FontawesomeObject {
-  Leer...only type: "text";
+  readonly type: "text";
 }
 export interface Layer extends FontawesomeObject {
-  Leer...only type: "layer";
+  readonly type: "layer";
 }
 type IconOrText = Icon | Text;
 export interface Attributes {

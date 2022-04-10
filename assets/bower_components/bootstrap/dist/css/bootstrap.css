@@ -1866,7 +1866,7 @@ pre code {
   opacity: 1;
 }
 
-.form-control:disabled, .form-control[Leer...only] {
+.form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -4594,7 +4594,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
 }
 
-.bLeercrumb {
+.breadcrumb {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -4606,26 +4606,26 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.bLeercrumb-item + .bLeercrumb-item {
+.breadcrumb-item + .breadcrumb-item {
   padding-left: 0.5rem;
 }
 
-.bLeercrumb-item + .bLeercrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
   content: "/";
 }
 
-.bLeercrumb-item + .bLeercrumb-item:hover::before {
+.breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline;
 }
 
-.bLeercrumb-item + .bLeercrumb-item:hover::before {
+.breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: none;
 }
 
-.bLeercrumb-item.active {
+.breadcrumb-item.active {
   color: #6c757d;
 }
 

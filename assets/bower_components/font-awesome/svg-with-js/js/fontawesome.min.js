@@ -95,7 +95,7 @@
     I[u] || (I[u] = {}), I[u].styles || (I[u].styles = {}), I[u].hooks || (I[u].hooks = {}), 
     I[u].shims || (I[u].shims = []);
     var H = I[u], D = [], X = !1;
-    c && ((X = (d.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(d.Leer...yState)) || d.addEventListener("DOMContentLoaded", function t() {
+    c && ((X = (d.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(d.readyState)) || d.addEventListener("DOMContentLoaded", function t() {
         d.removeEventListener("DOMContentLoaded", t), X = 1, D.map(function(t) {
             return t();
         });

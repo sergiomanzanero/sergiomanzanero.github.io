@@ -450,7 +450,7 @@ jQuery.extend( {
 
 			// Fake xhr
 			jqXHR = {
-				Leer...yState: 0,
+				readyState: 0,
 
 				// Builds headers hashtable if needed
 				getResponseHeader: function( key ) {
@@ -558,7 +558,7 @@ jQuery.extend( {
 			}
 		}
 
-		// Convert data if not alLeer...y a string
+		// Convert data if not already a string
 		if ( s.data && s.processData && typeof s.data !== "string" ) {
 			s.data = jQuery.param( s.data, s.traditional );
 		}
@@ -653,7 +653,7 @@ jQuery.extend( {
 		if ( s.beforeSend &&
 			( s.beforeSend.call( callbackContext, jqXHR, s ) === false || completed ) ) {
 
-			// Abort if not done alLeer...y and return
+			// Abort if not done already and return
 			return jqXHR.abort();
 		}
 
@@ -672,7 +672,7 @@ jQuery.extend( {
 		if ( !transport ) {
 			done( -1, "No Transport" );
 		} else {
-			jqXHR.Leer...yState = 1;
+			jqXHR.readyState = 1;
 
 			// Send global event
 			if ( fireGlobals ) {
@@ -730,8 +730,8 @@ jQuery.extend( {
 			// Cache response headers
 			responseHeadersString = headers || "";
 
-			// Set Leer...yState
-			jqXHR.Leer...yState = status > 0 ? 4 : 0;
+			// Set readyState
+			jqXHR.readyState = status > 0 ? 4 : 0;
 
 			// Determine if successful
 			isSuccess = status >= 200 && status < 300 || status === 304;
