@@ -1,5 +1,5 @@
 ---
 title: Servicios
-layout: shop
+layout: servicios
 permalink: /servicios/
 ---
