@@ -1,4 +1,4 @@
-baseURL: "https://example.com"
+baseURL: "https://sergiomanzanero.github.ip"
 languageCode: "en-us"
 title: "Hugo Novela"
 pygmentsstyle: 'monokai'
@@ -8,8 +8,8 @@ metaDataFormat: yaml
 # theme: novela
 module:
   imports:
-    - path: "github.com/forestryio/hugo-theme-novela"
-paginate: 6
+    - path: "github.com/sergiomanzanero/sergiomanzanero/sergiocms"
+paginate: 4
 social:
   twitter: "#"
   github: "#"
