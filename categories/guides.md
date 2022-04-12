@@ -4,7 +4,7 @@ title: Guides
 permalink: /blog/categories/guides/
 ---
 
-<h5> Posts by Category : {{ page.title }} </h5>
+<h5> Post de la Categoría : {{ page.title }} </h5>
 
 <div class="card">
 {% for post in site.categories.guides %}
