@@ -1,5 +1,5 @@
-baseURL: "https://sergiomanzanero.github.ip"
-languageCode: "en-us"
+baseURL: "https://sergiomanzanero.github.io/sergiocms"
+languageCode: "es-es"
 title: "Hugo Novela"
 pygmentsstyle: 'monokai'
 metaDataFormat: yaml
@@ -8,7 +8,7 @@ metaDataFormat: yaml
 # theme: novela
 module:
   imports:
-    - path: "github.com/sergiomanzanero/sergiomanzanero/sergiocms"
+    - path: "github.com/sergiomanzanero/sergiomanzanero.github.io/tree/main/sergiocms"
 paginate: 4
 social:
   twitter: "#"
