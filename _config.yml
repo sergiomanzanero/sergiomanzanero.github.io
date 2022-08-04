@@ -33,26 +33,59 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+            - company_name: ARSYS - IONOS CLOUD
+              company_logo: Asrys.jpg
+              company_url: https://www.arsys.es
+              designation: Ingeniero preventa
+              description: Recopilación de datos de los clientes para la elaboración de soluciones técnicas a medida para todo tipo de clientes y potenciales clientes. 
+                           Responsable del apoyo técnico al desarrollo de ventas de productos y servicios de la unidad de IONOS CLOUD y todas las actividades de ventas relacionados con clientes estratégicos. 
+                           Dando respuesta a las solicitudes comerciales en los sectores privado y público.
+                           Desarrollo planes de negocios, objetivos a largo plazo, estrategia de precios y metas de satisfacción del cliente, realizando un seguimiento de fabricantes
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: GRUPO SERMICRO
+              company_logo: sermicro.png
+              company_url: https://gruposermicro.com
+              designation: Desarrollador, Administrador de Sistemas y DEVOPS
+              description: Programación en SQL, PHP, Script Shell de UNIX, Python y Java. 
+                            Creación y migración de webs con Wordpress, Joomla, Drupal y PrestaShop.
+                            Securización y optimización de servidores para entornos productivos Linux/Aix/HP-UX
+                            Realización de scripts de carga de datos en bases de datos MySql, SQL Server y Oracle.
+                            Migración de Sistemas Windows Server y Linux
+                            Actualización de versiones software y mantenimiento preventivo de entornos productivos. Windows, Linux y Aix.
+                            Montaje y configuración de equipos físicos para virtualizaciones con VMware ESXi
+                            Conexión stretched cluster de dos equipos en dos regiones
+                            Creación de DRP y DR
+                            Administración de diversos sistemas de backups 
+                            Creación de servicios API Rest
+                            Instalaciones y configuración de Jira  y Jenkins
+                            Automatización de procesos CI/DI con Gitlab  
+                            Programación modelo vista controlador en Joomla!
+                            Parametrización y optimización de las bases de datos anteriormente descritas.
+                            Tareas administrativas y toma de requerimiento en clientes para la implantación de soluciones profesionales avanzadas. 
+                            Parametrización y optimización de sistemas. Windows, Linux y Aix.
+                            Clasificación y resolución de incidencias con diversas herramientas de ticketing.
+                            Creación de procedimiento para el Derecho al Olvido con Alfresco. Linux
+                            Configuraciones de VPN.
+                            Configuraciones de DNS.
+                            Análisis de diseños de sistemas, base de datos y vulnerabilidades.
+                            Auditorías de Seguridad.
+                            Configuraciones de NAS Synology.
+
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: logoIESA.jpg
+                college_name: IES Augustóbriga
+                college_url: https://iesaugustobriga.educarex.es/
+                college_degree: Desarrollo de Aplicaciones Multiplataforma
+                description: DAM
+                visibility: true
+              - college_logo: licenciados.jpg
+                college_name: IES Augustóbriga
+                college_url: https://iesaugustobriga.educarex.es/
+                college_degree: Desarrollo de Aplicaciones Multiplataforma
+                description: DAM
                 visibility: true
 
 # Projects
@@ -68,20 +101,7 @@ author_project_details:
                 project_url: https://hack4r.com
                 visibility: true
 
-# social links
-# twitter_username: johndoe
 github_username:  sergiomanzanero
-
-#for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
-
-# disqus_shortname: sujay-kundu
-# hyvor_talk_website_id: 476
-
-# wakatime username (coding activity)
-# wakatime_username: sujaykundu777
-
-# mailchimp embedded form url (newsletter):
-# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 getform_endpoint: 58eb2070-e5c7-4f9f-adca-bca7e5dfd2d5
@@ -126,7 +146,7 @@ collections:
   products:
     output: true
   authors:
-    output: true
+    output: false
 
 defaults:
   -
