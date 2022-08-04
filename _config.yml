@@ -34,7 +34,7 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: ARSYS - IONOS CLOUD
-              company_logo: asrsys.jpg
+              company_logo: arsys.jpg
               company_url: https://www.arsys.es
               designation: Ingeniero preventa
               description: <li type="square">Recopilación de datos de los clientes para la elaboración de soluciones técnicas a medida para todo tipo de clientes y potenciales clientes. </li>
