@@ -34,7 +34,7 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: ARSYS - IONOS CLOUD
-              company_logo: Asrys.jpg
+              company_logo: asrys.jpg
               company_url: https://www.arsys.es
               designation: Ingeniero preventa
               description: Recopilación de datos de los clientes para la elaboración de soluciones técnicas a medida para todo tipo de clientes y potenciales clientes. 
@@ -43,34 +43,33 @@ author_work_experiences:
                            Desarrollo planes de negocios, objetivos a largo plazo, estrategia de precios y metas de satisfacción del cliente, realizando un seguimiento de fabricantes
               visibility: true
             - company_name: GRUPO SERMICRO
-              company_logo: sermicro.png
+              company_logo: sermicro.jpg
               company_url: https://gruposermicro.com
               designation: Desarrollador, Administrador de Sistemas y DEVOPS
-              description: Programación en SQL, PHP, Script Shell de UNIX, Python y Java. 
-                            Creación y migración de webs con Wordpress, Joomla, Drupal y PrestaShop.
-                            Securización y optimización de servidores para entornos productivos Linux/Aix/HP-UX
-                            Realización de scripts de carga de datos en bases de datos MySql, SQL Server y Oracle.
-                            Migración de Sistemas Windows Server y Linux
-                            Actualización de versiones software y mantenimiento preventivo de entornos productivos. Windows, Linux y Aix.
-                            Montaje y configuración de equipos físicos para virtualizaciones con VMware ESXi
-                            Conexión stretched cluster de dos equipos en dos regiones
-                            Creación de DRP y DR
-                            Administración de diversos sistemas de backups 
-                            Creación de servicios API Rest
-                            Instalaciones y configuración de Jira  y Jenkins
-                            Automatización de procesos CI/DI con Gitlab  
-                            Programación modelo vista controlador en Joomla!
-                            Parametrización y optimización de las bases de datos anteriormente descritas.
-                            Tareas administrativas y toma de requerimiento en clientes para la implantación de soluciones profesionales avanzadas. 
-                            Parametrización y optimización de sistemas. Windows, Linux y Aix.
-                            Clasificación y resolución de incidencias con diversas herramientas de ticketing.
-                            Creación de procedimiento para el Derecho al Olvido con Alfresco. Linux
-                            Configuraciones de VPN.
-                            Configuraciones de DNS.
-                            Análisis de diseños de sistemas, base de datos y vulnerabilidades.
-                            Auditorías de Seguridad.
-                            Configuraciones de NAS Synology.
-
+              description: <li type="square">Programación en SQL, PHP, Script Shell de UNIX, Python y Java. </li>
+                            <li type="square">Creación y migración de webs con Wordpress, Joomla, Drupal y PrestaShop.</li>
+                            <li type="square">Securización y optimización de servidores para entornos productivos Linux/Aix/HP-UX</li>
+                            <li type="square">Realización de scripts de carga de datos en bases de datos MySql, SQL Server y Oracle.</li>
+                            <li type="square">Migración de Sistemas Windows Server y Linux</li>
+                            <li type="square">Actualización de versiones software y mantenimiento preventivo de entornos productivos. Windows, Linux y Aix.</li>
+                            <li type="square">Montaje y configuración de equipos físicos para virtualizaciones con VMware ESXi</li>
+                            <li type="square">Conexión stretched cluster de dos equipos en dos regiones</li>
+                            <li type="square">Creación de DRP y DR</li>
+                            <li type="square">Administración de diversos sistemas de backups </li>
+                            <li type="square">Creación de servicios API Rest</li>
+                            <li type="square">Instalaciones y configuración de Jira  y Jenkins</li>
+                            <li type="square">Automatización de procesos CI/DI con Gitlab  </li>
+                            <li type="square">Programación modelo vista controlador en Joomla!</li>
+                            <li type="square">Parametrización y optimización de las bases de datos anteriormente descritas.</li>
+                            <li type="square">Tareas administrativas y toma de requerimiento en clientes para la implantación de soluciones profesionales avanzadas. </li>
+                            <li type="square">Parametrización y optimización de sistemas. Windows, Linux y Aix.</li>
+                            <li type="square">Clasificación y resolución de incidencias con diversas herramientas de ticketing.</li>
+                            <li type="square">Creación de procedimiento para el Derecho al Olvido con Alfresco. Linux</li>
+                            <li type="square">Configuraciones de VPN.</li>
+                            <li type="square">Configuraciones de DNS.</li>
+                            <li type="square">Análisis de diseños de sistemas, base de datos y vulnerabilidades.</li>
+                            <li type="square">Auditorías de Seguridad.</li>
+                            <li type="square">Configuraciones de NAS Synology.</li>
               visibility: true
 
 # Education
@@ -81,11 +80,11 @@ author_education_details:
                 college_degree: Desarrollo de Aplicaciones Multiplataforma
                 description: DAM
                 visibility: true
-              - college_logo: licenciados.jpg
-                college_name: IES Augustóbriga
-                college_url: https://iesaugustobriga.educarex.es/
-                college_degree: Desarrollo de Aplicaciones Multiplataforma
-                description: DAM
+              - college_logo: licenciados.png
+                college_name: Licenciados Reunidos
+                college_url: https://www.licenciadosreunidos.es/
+                college_degree: EGG
+                description: 
                 visibility: true
 
 # Projects
