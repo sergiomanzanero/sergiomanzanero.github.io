@@ -24,7 +24,7 @@ urls:
 
 author_logo: profile.png
 author: Sergio Manzanero
-author_bio: Trabajando por un mundo mejor :D
+author_bio: Trabajando por un mundo mejor. Realización de proyectos sociales. Participo en Colonias Felinas :D
 author_email: "manzanero.sergio@gmail.com"
 author_location: España
 author_website_url: "https://singletontechs.com"
@@ -34,13 +34,13 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: ARSYS - IONOS CLOUD
-              company_logo: asrys.jpg
+              company_logo: asrsys.jpg
               company_url: https://www.arsys.es
               designation: Ingeniero preventa
-              description: Recopilación de datos de los clientes para la elaboración de soluciones técnicas a medida para todo tipo de clientes y potenciales clientes. 
-                           Responsable del apoyo técnico al desarrollo de ventas de productos y servicios de la unidad de IONOS CLOUD y todas las actividades de ventas relacionados con clientes estratégicos. 
-                           Dando respuesta a las solicitudes comerciales en los sectores privado y público.
-                           Desarrollo planes de negocios, objetivos a largo plazo, estrategia de precios y metas de satisfacción del cliente, realizando un seguimiento de fabricantes
+              description: <li type="square">Recopilación de datos de los clientes para la elaboración de soluciones técnicas a medida para todo tipo de clientes y potenciales clientes. </li>
+                           <li type="square">Responsable del apoyo técnico al desarrollo de ventas de productos y servicios de la unidad de IONOS CLOUD y todas las actividades de ventas relacionados con clientes estratégicos. </li>
+                           <li type="square">Dando respuesta a las solicitudes comerciales en los sectores privado y público.</li>
+                           <li type="square">Desarrollo planes de negocios, objetivos a largo plazo, estrategia de precios y metas de satisfacción del cliente, realizando un seguimiento de fabricantes.</li>
               visibility: true
             - company_name: GRUPO SERMICRO
               company_logo: sermicro.jpg
